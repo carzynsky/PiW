@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5. Animacja rakiety</title>
+    <link rel="icon" href="https://www.iskierkawroc.pl/wp-content/uploads/2019/04/logo-PWr-kolor-pion-bez-tla.png">
+    <link rel="stylesheet" href="../styles/rocket.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body onload="initial();">
+  <section id="nav-bar">
+    <nav class="navbar navbar-dark">
+      <a id="navbar-home" class="navbar-brand" href="../index.html"><img src="../img/home.png" alt="home" width="50px" height="50px"></a>
+    </nav>
+  </section>
+  <section id="content">
+    <div class="container">
+        <div class="rocket-animation-panel">
+            <img id="starfield" src="../gifs/starfield.gif" alt="starfield">
+            <img id="rocketship" src="../gifs/rocketship.gif" alt="rocketship">
+        </div>
+        <div class="rocket-menu">
+            <div class="row">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-2">
+                    <label id="okButtonStart" class="btn btn-primary">Start</button>
+                </div>
+                <div class="col-md-2">
+                    <label id="okButtonFaster" class="btn btn-primary">Przyspiesz</button>
+                </div>
+                <div class="col-md-2">
+                    <label id="okButtonSlower" class="btn btn-primary">Zwolnij</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+</body>
+<script src="../scripts/rocket.js"></script>
+</html>

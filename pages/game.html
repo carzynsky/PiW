@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6. Gra zręcznościowa</title>
+    <link rel="icon" href="https://www.iskierkawroc.pl/wp-content/uploads/2019/04/logo-PWr-kolor-pion-bez-tla.png">
+    <link rel="stylesheet" href="../styles/game.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body onload="move();">
+  <section id="nav-bar">
+    <nav class="navbar navbar-dark">
+      <a id="navbar-home" class="navbar-brand" href="../index.html"><img src="../img/home.png" alt="home" width="50px" height="50px"></a>
+    </nav>
+  </section>
+  <section id="content">
+    <div class="container">
+        
+        <div id="game-board" class="game-board">
+            <img class="monster" src="../img/monster2.png" alt="monster" style="position:absolute; left: 590px; top: 250px;">
+            <img class="monster" src="../img/monster2.png" alt="monster" style="position:absolute; left: 730px; top: 310px;">
+            <img class="monster" src="../img/monster1.png" alt="monster" style="position:absolute; left: 840px; top: 220px;">
+        </div>
+        <div class="score-board">
+            <h4 id="action-msg" style="color:rgb(255, 123, 0);font-size: 20px;">Strzelaj do niebieskich! Unikaj żółtych!</h4>
+            <h4 style="color: rgb(236, 231, 231);"id="score-info">Wynik: 0</h4>
+        </div>
+    </div>
+  </section>
+</body>
+<script src="../scripts/game.js"></script>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logowanie</title>
+    <link rel="icon" href="https://www.iskierkawroc.pl/wp-content/uploads/2019/04/logo-PWr-kolor-pion-bez-tla.png">
+    <link rel="stylesheet" href="../styles/login.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+  <section id="nav-bar">
+    <nav class="navbar navbar-dark">
+      <a id="navbar-home" class="navbar-brand" href="../index.html"><img src="../img/home.png" alt="home" width="50px" height="50px"></a>
+    </nav>
+  </section>
+  <section id="content">
+    <div class="container">
+      <div class="login-panel">
+          <form>
+              <div class="form-group">
+                <label for="exampleInputFirstName">Imię</label>
+                <input type="text" class="form-control" id="exampleInputFirstName" aria-describedby="firstNameHelp" placeholder="Podaj imię">
+                <small id="firstNameHelp" class="form-text text-muted-my"></small>
+              </div>
+              <div class="form-group">
+                  <label for="exampleInputLastName">Nazwisko</label>
+                  <input type="text" class="form-control" id="exampleInputLastName" aria-describedby="lastNameHelp" placeholder="Podaj nazwisko">
+                  <small id="lastNameHelp" class="form-text text-muted-my"></small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPhone">Numer telefonu</label>
+                  <input type="text" class="form-control" id="exampleInputPhone" aria-describedby="phoneHelp" placeholder="Podaj nr. telefonu">
+                  <small id="phoneHelp" class="form-text text-muted-my">W formacie międzynarodowym np. +48123456789</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputBirthdate">Data urodzenia</label>
+                  <input type="text" class="form-control" id="exampleInputBirthdate" aria-describedby="birthdateHelp" placeholder="Podaj datę urodzenia">
+                  <small id="birthdateHelp" class="form-text text-muted-my">W formacie 10.12.2020</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail">Adres email</label>
+                  <input type="text" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Podaj adres email">
+                  <small id="emailHelp" class="form-text text-muted-my"></small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputLogin">Login</label>
+                  <input type="text" class="form-control" id="exampleInputLogin" aria-describedby="loginHelp" placeholder="Podaj login">
+                  <small id="loginHelp" class="form-text text-muted-my">Tylko małe litery - bez cyfr</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Hasło</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Podaj hasło">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword2">Powtórz hasło</label>
+                  <input type="password" class="form-control" id="exampleInputPassword2" aria-describedby="passwordHelp" placeholder="Powtórz hasło">
+                  <small id="passwordHelp" class="form-text text-muted-my"></small>
+                </div>
+            </form>
+            <label id="okButton" class="btn btn-primary btn-my">Ok</button>
+      </div>
+      <div class="output-login">
+        <h3 id="output-title-msg">Podane dane:</h3>
+        <div class="form-group">
+          <label for="outputFirstName">Imię</label>
+          <h2 id="outputFirstName"></h2>
+        </div>
+        <div class="form-group">
+          <label for="outputLastName">Nazwisko</label>
+          <h2 id="outputLastName"></h2>
+        </div>
+        <div class="form-group">
+          <label for="outputPhone">Numer telefonu</label>
+          <h2 id="outputPhone"></h2>
+        </div>
+        <div class="form-group">
+          <label for="outputDay">Dzień urodzenia</label>
+          <h2 id="outputDay"></h2>
+        </div>
+        <div class="form-group">
+          <label for="outputMonth">Miesiąc urodzenia</label>
+          <h2 id="outputMonth"></h2>
+        </div>
+        <div class="form-group">
+          <label for="outputYear">Rok urodzenia</label>
+          <h2 id="outputYear"></h2>
+        </div>
+        <div class="form-group">
+          <label for="outputEmail">Adres email</label>
+          <h2 id="outputEmail"></h2>
+        </div>
+        <div class="form-group">
+          <label for="outputLogin">Login</label>
+          <h2 id="outputLogin"></h2>
+        </div>
+        <div class="form-group">
+          <label for="outputPassword">Hasło</label>
+          <h2 id="outputPassword"></h2>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+<script src="../scripts/login.js"></script>
+</html>
