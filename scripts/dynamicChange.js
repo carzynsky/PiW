@@ -1,13 +1,10 @@
 const refPic = document.getElementById('ref-pic');
 
-let index = 0;
 
 refPic.addEventListener('mouseover', function(){
-    index = (index + 1) % 5;
-    console.log(index);
-    document.getElementById("pic").src = "../img/" + index + ".png";
+    document.getElementById("pic").src = "../img/1.png";
 })
 
 refPic.addEventListener('mouseout', function(){
-    console.log('out :(');
+    document.getElementById("pic").src = "../img/0.png";
 })
